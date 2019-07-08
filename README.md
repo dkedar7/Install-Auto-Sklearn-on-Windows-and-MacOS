@@ -32,13 +32,13 @@ Now, the command 'curl https://raw.githubusercontent.com/automl/auto-sklearn/mas
 I did the exact same things so far and managed to install auto-sklearn successfully. After that, from python, I tried to 'import autosklearn.classification', but it wasn't compatible with my version of numpy.
 I got the following error- ValueError: numpy.ufunc size changed, may indicate binary incompatibility. Expected 216 from C header, got 192 from PyObject
 
-## 3. Solving Numpy incompatible
-Turns out the numpy version 1.15.4 that I had wasn't compatible, so I'd to change it to upgrade it to 1.16.1 using
+## 3. Solving numpy incompatibility
+Turns out the numpy version 1.15.4 that I had wasn't compatible, so I'd to upgrade it to 1.16.1 using
 ```
 pip install numpy==1.16.1
 ```
 
-Try running the follwing code to check if you managed to install auto-sklearn properly-
+Try running the follwing code to check if auto-sklearn was installed properly-
 ```
 import autosklearn.classification
 import sklearn.model_selection
