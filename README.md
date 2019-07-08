@@ -3,7 +3,7 @@
 ## How to install AutoML's auto-sklearn on MacOS
 Using a conda virtual environment is recommended.
 
-### If everything is ideal, running the following should get you started.
+### If everything is ideal, running the following should get you going.
 ```
 conda install gcc
 pip uninstall pyrfr auto-sklearn
@@ -12,6 +12,7 @@ pip install pyrfr auto-sklearn --no-cache-dir
 ```
 
 ### But, when are things ideal.
+
 ## 1. If conda can't find gcc, use the following command-
 (PackagesNotFoundError: The following packages are not available from current channels:)
 ```
