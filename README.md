@@ -1,4 +1,42 @@
-# Auto-Sklearn-on-MacOS
+# Install auto-sklearn on Windows 10
+The best way to use auto-sklearn on a Windows 10 machine is to make use of the Windows Sussystem for Linux (WSL). 
+### Step 1. Open command prompt as administrator, run powershell and enter the following command-
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+This will make you restart your computer at the end.
+
+### Step 2. Install the Ubuntu app from the Windows store.
+
+### Step 3. Install pip
+Pip isn't installed by default and it will have have to be installed separately.
+If the command 'sudo apt-get install python3-pip' is run directly, it will give the error 'E: Unable to locate package python3-pip'. So, run the following commands in sequence-
+```
+sudo apt-get install software-properties-common
+sudo apt-add-repository universe
+sudo apt-get update
+sudo apt-get install python3-pip
+```
+
+### Step 4. Install numpy
+```
+pip3 install numpy
+```
+
+### Step 5. Install auto-sklearn
+```
+pip3 install auto-sklearn
+```
+
+Try running the follwing code to check if auto-sklearn was installed properly-
+```
+import autosklearn.classification
+import sklearn.model_selection
+import sklearn.datasets
+import sklearn.metrics
+```
+
+# Install auto-sklearn on MacOS
 
 ## How to install AutoML's auto-sklearn on MacOS
 Using a conda virtual environment is recommended.
